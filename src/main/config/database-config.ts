@@ -17,7 +17,6 @@ export class DatabaseConfig {
             migrations: [],
             subscribers: [],
         })
-
         return AppDataSource;
     }
 
@@ -32,11 +31,10 @@ export class DatabaseConfig {
             synchronize: true,
             cache: true,
             logging: false,
-            entities: ["src/infra/postgres/entities/**/*.{ts,js}"],
+            entities: ["dist/infra/postgres/entities/**/*.{ts,js}"],
             migrations: [],
             subscribers: [],
         })
-
         return AppDataSource;
     }
 }
