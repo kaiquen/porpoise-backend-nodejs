@@ -5,10 +5,10 @@ export class DatabaseConfig {
     public static async createConnectionDevelopment():Promise<DataSource> {
         const AppDataSource = new DataSource({
             type: "postgres",
-            host: EnvConfig.getPostgresHost(),
-            port: EnvConfig.getPostgresPort(),
-            username: EnvConfig.getPostgresUser(),
-            password: EnvConfig.getPostgresPassword(),
+            host: 'localhost',
+            port: 5432,
+            username: 'postgres',
+            password: 'root',
             database: "porpoise",
             synchronize: true,
             cache: true,
@@ -28,7 +28,7 @@ export class DatabaseConfig {
             port: EnvConfig.getPostgresPort(),
             username: EnvConfig.getPostgresUser(),
             password: EnvConfig.getPostgresPassword(),
-            database: "porpoise",
+            database: "d2nu6iugftt76p",
             synchronize: true,
             cache: true,
             logging: false,

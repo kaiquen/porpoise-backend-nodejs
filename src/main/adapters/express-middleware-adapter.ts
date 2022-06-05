@@ -12,9 +12,9 @@ export const adaptRouterList = (controller: ControllerList) => {
             body: req.body
         }
 
-        const httpResponse: HttpResponse = await controller.list(httpRequest)
+        const httpResponse: HttpResponse = await controller.list(httpRequest);
 
-        res.status(httpResponse.statusCode).json(httpResponse.body)
+        res.status(httpResponse.statusCode).json(httpResponse.body);
     }
 }
 
@@ -25,8 +25,8 @@ export const adaptRouterCreate = (controller: ControllerCreate) => {
         }
 
 
-        const httpResponse: HttpResponse = await controller.create(httpRequest)
+        const httpResponse: HttpResponse = await controller.create(httpRequest);
 
-        res.status(httpResponse.statusCode).json(httpResponse.body)
+        res.status(httpResponse.statusCode).json(httpResponse.body);
     }
 }
